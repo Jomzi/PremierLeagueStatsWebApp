@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+<form method="POST" class="post-form" action="/update/{{overview.id}}">
+        {% csrf_token %}
+    <div class="container">
+<br>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <h3>Update Details</h3>
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Team Id:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="team_id" id="id_team_id"  value="{{ overview.team_id }}"/>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Team Name:</label>
+    <div class="col-sm-4">
+        <input type="text" name="team_name" id="id_team_name" required maxlength="100" value="{{ overview.team_name }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">MP:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="matches_played" id="id_matches_played"  value="{{ overview.matches_played }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">W:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="wins" id="id_wins"  value="{{ overview.wins }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">D:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="draws" id="id_draws"  value="{{ overview.draws }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">L:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="losses" id="id_losses"  value="{{ overview.losses }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">RK:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="league_position" id="id_league_position"  value="{{ overview.league_position }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">GS:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="goals_scored" id="id_goals_scored"  value="{{ overview.goals_scored }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">GC:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="goals_conceded" id="id_goals_conceded"  value="{{ overview.goals_conceded }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-2 col-form-label">GDiff:</label>
+    <div class="col-sm-4">
+        <input type="Number" name="goal_difference" id="id_goal_difference"  value="{{ overview.goal_difference }}" />
+    </div>
+  </div>
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <button type="submit" class="btn btn-success">Update</button>
+    </div>
+  </div>
+    </div>
+</form>
+</body>
+</html>

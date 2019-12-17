@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>League Table</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+<table class="table table-striped table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>Team ID</th>
+        <th>Team Name</th>
+        <th>MP</th>
+        <th>W</th>
+        <th>D</th>
+        <th>L</th>
+        <th>RK</th>
+        <th>GS</th>
+        <th>GC</th>
+        <th>GDiff</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+{% for overview in overviews %}
+    <tr>
+        <td>{{ overview.team_id }}</td>
+        <td>{{ overview.team_name }}</td>
+        <td>{{ overview.matches_played }}</td>
+        <td>{{ overview.wins }}</td>
+        <td>{{ overview.draws }}</td>
+        <td>{{ overview.losses }}</td>
+        <td>{{ overview.league_position }}</td>
+        <td>{{ overview.goals_scored }}</td>
+        <td>{{ overview.goals_conceded }}</td>
+        <td>{{ overview.goal_difference }}</td>
+        <td>
+            <a href="/edit/{{ overview.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
+            <a href="/delete/{{ overview.id }}">Delete</a>
+        </td>
+    </tr>
+{% endfor %}
+    </tbody>
+</table>
+<br>
+<br>
+<center><a href="/emp" class="btn btn-primary">Add New Team</a></center>
+</body>
+</html>
