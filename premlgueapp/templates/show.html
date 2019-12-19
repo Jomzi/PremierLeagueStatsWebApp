@@ -27,7 +27,7 @@
 <table class="table table-striped table-bordered table-sm">
     <thead class="thead-dark">
     <tr>
-        <th>Team ID</th>
+        <th>ID</th>
         <th>Team Name</th>
         <th>MP</th>
         <th>W</th>
@@ -37,6 +37,7 @@
         <th>GS</th>
         <th>GC</th>
         <th>GDiff</th>
+        <th>Pts</th>
         <th>Actions</th>
     </tr>
     </thead>
@@ -53,6 +54,7 @@
         <td>{{ overview.goals_scored }}</td>
         <td>{{ overview.goals_conceded }}</td>
         <td>{{ overview.goal_difference }}</td>
+        <td>{{ overview.points }}</td>
         <td>
             <a href="/edit/{{ overview.id }}"><span class="glyphicon glyphicon-pencil" >Edit</span></a>
             <a href="/delete/{{ overview.id }}">Delete</a>
