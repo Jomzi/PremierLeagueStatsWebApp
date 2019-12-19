@@ -21,23 +21,6 @@ def show(request):
     return render(request, "show.html", {'overviews': overviews})
 
 
-def edit(request, id):
-    overview = Overview.objects.get(id=id)
-    return render(request, 'edit.html', {'overview': overview})
 
-
-def update(request, id):
-    overview = Overview.objects.get(id=id)
-    form = OverviewForm(request.POST, instance=overview)
-    if form.is_valid():
-        form.save()
-        return redirect("/show")
-    return render(request, 'edit.html', {'overview': overview})
-
-
-def destroy(request, id):
-    result = Overview.objects.get(id=id)
-    result.delete()
-    return redirect("/show")
 
 
