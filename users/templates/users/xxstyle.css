@@ -1,0 +1,82 @@
+body {
+  background-image: url("login-background.png");
+  background-size: cover;
+}
+
+h2,h3 {
+
+  color:white;
+  text-align: center;
+}
+
+form {
+  margin-left:35%;
+  margin-right:35%;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: grey;
+  padding-top: 25px;
+  padding-bottom:25px;
+  padding-left:50px;
+  padding-right:50px;
+  border-radius: 5px;
+}
+.account{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.content-section {
+  padding-top: 20px;
+
+}
+
+.login {
+  padding-top: 50px;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #2522dd;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}

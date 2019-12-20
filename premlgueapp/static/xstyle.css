@@ -56,19 +56,19 @@ a:link, a:visited {
   display: inline-block;
   width:100px;
 }
+
 a:hover, a:active {
   background-color: blue;
 }
+
 .center {
 justify-content:center ;
 }
+
+
 .form
 {
     display: inline-block;
+
     text-align: center;
 }
-
-.w3-bar {
-  margin-left:10%;
-}
-

@@ -1,11 +1,10 @@
 <head>
-    {% load static %}
-    <link rel="stylesheet" href="../static/pstyle.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     {% block content %}
-    <img src="../static/prem-logo.jpg" alt="Premiership Logo" style="width:400px;height:200px;" class="center">
+    <img src="prem-logo.jpg" alt="Premiership Logo" style="width:400px;height:200px;" class="center">
     <div class="content-section">
         <form method="POST">
             {% csrf_token %}

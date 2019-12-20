@@ -23,6 +23,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/plyrstats/static" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jomziii\DjangoProjects\users\templates" />
+      <recent name="C:\Users\Jomziii\DjangoProjects\users\static" />
+      <recent name="C:\Users\Jomziii\DjangoProjects\plyrstats\templates\player" />
+      <recent name="C:\Users\Jomziii\DjangoProjects\plyrstats\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jomziii\DjangoProjects\plyrstats\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
